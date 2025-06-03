@@ -17,7 +17,6 @@ function play(y) {
         }
     }
 
-
     checkWinner(1, 2, 3);
     checkWinner(4, 5, 6);
     checkWinner(7, 8, 9);
@@ -49,7 +48,7 @@ function playAgain() {
     window.isGameOver = false;
     for (var k = 0; k < span.length; k++) {
         span[k].parentNode.className = span[k].parentNode.className.replace("activeBox", "");
-    }
+    }s
 }
 
 function resetGame() {
@@ -61,7 +60,7 @@ function resetGame() {
 }
 
 function gameOver(a) {
-    var gameOverAlertElement = "<b>Perdisteeeeeeee </b><br><br> Jugador " + span[a].dataset.player.toUpperCase() + ' SOS UNAA MAQUINAAA <br><br>' + restartButton;
+    var gameOverAlertElement = "<b>No parcero horrible </b><br><br> Jugador " + span[a].dataset.player.toUpperCase() + 'Ganaste pa <br><br>' + restartButton;
     var div = document.createElement("div");
     div.className = "alert";
     div.innerHTML = gameOverAlertElement;
