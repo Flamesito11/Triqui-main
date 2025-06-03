@@ -60,7 +60,7 @@ function resetGame() {
 }
 
 function gameOver(a) {
-    var gameOverAlertElement = "<b>No parcero horrible </b><br><br> Jugador " + span[a].dataset.player.toUpperCase() + 'Ganaste pa <br><br>' + restartButton;
+    var gameOverAlertElement = " Jugador " + span[a].dataset.player.toUpperCase() + ' Ganaste pa <br><br>' + restartButton;
     var div = document.createElement("div");
     div.className = "alert";
     div.innerHTML = gameOverAlertElement;
