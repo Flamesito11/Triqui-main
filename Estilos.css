@@ -34,15 +34,14 @@ body {
 
 
 span {
-    position: absolute;
-    font-size: 75px;
-    font-family: sans-serif;
-    text-align: center;
-    height: 75px;
-    width: 75px;
+    font-size: 70px;
+    line-height: 100px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0;
     padding: 0;
-    margin: 5px;
-    margin-left: -35px;
+    position: relative;
 }
 
 .top {
