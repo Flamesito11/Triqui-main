@@ -1,19 +1,23 @@
-body{
-    background: #000;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
     color: white;
     font-family: serif;
     text-align: center;
+    background: linear-gradient(to bottom, #1c1c1c, #000);
+    min-height: 100vh;
 }
 
-#container{
-    margin: 5px auto;
-    border-radius: 10px;
-    text-align: center;
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    margin: 40px auto;
+    gap: 0;
 }
 
-.box{
+
+.box {
     display: inline-block;
     border: 6px solid dimgray;
     width: 100px;
@@ -23,7 +27,13 @@ body{
     padding: 0;
 }
 
-span{
+.box:hover {
+    background-color: #222;
+    cursor: pointer;
+}
+
+
+span {
     position: absolute;
     font-size: 75px;
     font-family: sans-serif;
@@ -35,23 +45,23 @@ span{
     margin-left: -35px;
 }
 
-.top{
+.top {
     border-top: none;
 }
 
-.bottom{
+.bottom {
     border-bottom: none;
 }
 
-.left{
+.left {
     border-left: none;
 }
 
-.right{
+.right {
     border-right: none;
 }
 
-.alert{
+.alert {
     height: 75px;
     width: 125px;
     display: inline-block;
@@ -69,29 +79,39 @@ span{
     top: 0;
 }
 
-button{
+button {
     background: white;
-    border-radius: 2px;
-    color: ghostwhite;
+    border-radius: 8px;
+    color: black;
     border: none;
-    outline: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #888;
+    transition: background 0.3s ease;
 }
 
-button:focus{
+button:hover {
+    background: #ddd;
+}
+
+
+button:focus {
     background: silver;
 }
 
-.activeBox{
+.activeBox {
     background: silver;
 }
 
-@keyframes larger{
-    from{
+@keyframes larger {
+    from {
         height: 75px;
         width: 125px;
     }
 
-    to{
+    to {
         height: 100px;
         width: 250px;
     }
